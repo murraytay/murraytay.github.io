@@ -9,7 +9,7 @@
   <meta name="author" content="">
 
   <title>Stylish Portfolio - Start Bootstrap Template</title>
-
+  <link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
   <!-- Bootstrap Core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -55,17 +55,19 @@
   <!-- Header -->
   <header class="masthead d-flex">
     <div class="container text-center my-auto">
+
+      <img src= "img/circme.jpeg" class="rounded-circle" width="180px" height="180px">
+      <br/>
+      <br/>
       <h1 class="mb-1">Taylor Murray</h1>
-      <h3 class="mb-5">
-        <em>Never too old to learn something new.</em>
-      </h3>
+      <br/>
       <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
     </div>
     <div class="overlay"></div>
   </header>
-
+  
   <!-- About -->
-  <section class="content-section bg-light" id="about">
+  <!-- <section class="content-section bg-light" id="about">
     <div class="container text-center">
       <div class="row">
         <div class="col-lg-10 mx-auto">
@@ -76,7 +78,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Services -->
   <section class="content-section bg-primary text-white text-center" id="services">
@@ -129,14 +131,14 @@
   </section>
 
   <!-- Callout -->
-  <section class="callout">
+<!--   <section class="callout">
     <div class="container text-center">
       <h2 class="mx-auto mb-5">Welcome to
         <em>your</em>
         next website!</h2>
       <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/template-overviews/stylish-portfolio/">Download Now!</a>
     </div>
-  </section>
+  </section> -->
 
   <!-- Portfolio -->
   <section class="content-section" id="portfolio">
@@ -254,3 +256,71 @@
 </body>
 
 </html>
+
+
+
+<!-- <script>
+    var bannerStatus = 1;
+    var bannerTimer = 4000;
+
+    window.onload() = function(){
+      bannerLoop();
+    }
+
+    var startBannerLoop = setInterval(function(){
+      bannerLoop();
+    }, bannerTimer);
+
+    function bannerLoop(){
+      if(bannerStatus === 1){
+        document.getElementById("img2").style.opacity = "0";
+        setTimeout(function(){
+          document.getElementById("img1").style.right = "0px";
+          document.getElementById("img1").style.zIndex = "1000";
+          document.getElementById("img2").style.right = "-1200px";
+          document.getElementById("img2").style.zIndex = "1500";
+          document.getElementById("img3").style.right = "1200px";
+          document.getElementById("img3").style.zIndex = "500";
+        }, 500);
+        
+
+        setTimeout(function(){
+          document.getElementById("img2").style.opacity = "1";
+        }, 1000) 
+        bannerStatus = 2;
+      } else if(bannerStatus === 2){
+        document.getElementById("img3").style.opacity = "0";
+        setTimeout(function(){
+          document.getElementById("img2").style.right = "0px";
+          document.getElementById("img2").style.zIndex = "1000";
+          document.getElementById("img3").style.right = "-1200px";
+          document.getElementById("img3").style.zIndex = "1500";
+          document.getElementById("img1").style.right = "1200px";
+          document.getElementById("img1").style.zIndex = "500";
+        }, 500);
+        
+
+        setTimeout(function(){
+          document.getElementById("img3").style.opacity = "1";
+        }, 1000) 
+        bannerStatus = 3;
+      } else{ //banner status 3
+        document.getElementById("img1").style.opacity = "0";
+        setTimeout(function(){
+          document.getElementById("img3").style.right = "0px";
+          document.getElementById("img3").style.zIndex = "1000";
+          document.getElementById("img1").style.right = "-1200px";
+          document.getElementById("img1").style.zIndex = "1500";
+          document.getElementById("img2").style.right = "1200px";
+          document.getElementById("img2").style.zIndex = "500";
+        }, 500);
+        
+
+        setTimeout(function(){
+          document.getElementById("img3").style.opacity = "1";
+        }, 1000) 
+        bannerStatus = 1;
+      }
+
+    }
+  </script> -->

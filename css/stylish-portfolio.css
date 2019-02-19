@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: 'Source Sans Pro';
+  font-family: 'Julius Sans One';
 }
 
 .btn-xl {
@@ -89,29 +89,40 @@ h6 {
   min-height: 30rem;
   position: relative;
   display: table;
-  width: 100%;
+  width: 70%;
+  margin: 0 auto;
+  background-color: #fff;
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/taubeta.jpg");
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/taubeta.jpg");
+  /*background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("../img/prettyback.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/prettyback8.jpg");*/
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .masthead h1 {
-  font-size: 4rem;
+  font-size: 2rem;
   margin: 0;
   padding: 0;
 }
 
-@media (min-width: 992px) {
+
+@media (min-width: 440px) {
   .masthead {
     height: 100vh;
   }
+
+  .masthead h1, h3{
+    color: rgb(0,0,0);
+  }
   .masthead h1 {
-    font-size: 5.5rem;
+    font-size: 3rem;
+  }
+  .masthead h3{
+    font-size: 1rem;
   }
 }
 
@@ -333,19 +344,19 @@ a:hover, a:focus, a:active {
 }
 
 .btn-primary {
-  background-color: #1D809F !important;
-  border-color: #1D809F !important;
+  background-color: #8896ff !important;
+  border-color: #8896ff !important;
   color: #fff !important;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #155d74 !important;
-  border-color: #155d74 !important;
+  background-color: #61dbd5 !important;
+  border-color: #61dbd5 !important;
 }
 
 .btn-secondary {
-  background-color: #ecb807 !important;
-  border-color: #ecb807 !important;
+  background-color: #61dbd5 !important;
+  border-color: #61dbd5 !important;
   color: #fff !important;
 }
 
@@ -362,6 +373,7 @@ a:hover, a:focus, a:active {
   -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
   font-weight: 700;
+  text-align: left;
 }
 
 .bg-primary {
